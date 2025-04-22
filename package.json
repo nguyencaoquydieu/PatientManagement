@@ -1,0 +1,11 @@
+{
+    "scripts": {
+        "dev": "mvn spring-boot:run",
+        "debug": "mvn spring-boot:run -Dspring.profiles.active=dev",
+        "build": "mvn install -Dmaven.test.skip=true",
+        "build clean": "mvn clean install",
+        "build no test": "mvn clean install -DskipTests",
+        "test": "mvn test",
+        "test no coverage": "mvn test -DskipTests"
+    }
+}
